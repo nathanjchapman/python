@@ -1,14 +1,15 @@
+
 class Employee:
 	def __init__(self, full_name, number, start_date, shift_pref):
 		self.full_name = full_name
-		self.number =number 
+		self.number = number 
 		self.start_date = start_date
 		self.shift_pref = shift_pref
 		self.occurances = 0
 		self.shift = 'no shift assigned'
 
 	def __repr__(self):
-		return "{}: {} ({})".format(self.number, self.full_name, self.shift)
+		return f"{self.number}: {self.full_name} ({self.shift})"
 
 
 class Shift:
@@ -97,3 +98,5 @@ for e in employees_list:
 nathan = employees_list[10]
 nathan.shift = shifts_list[3]
 print(nathan)
+
+
